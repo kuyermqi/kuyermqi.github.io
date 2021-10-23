@@ -1,0 +1,11 @@
+<div class="post-list">
+  {% for post in site.posts %}
+    <article class="post">
+      <div class="date">{{ post.date | date_to_string }}</div>
+      <a href="{{ post.url }}" class="info">
+        <div class="title">{{ post.title }}</div>
+        <div class="excerpt">{{ post.content | strip_html | truncatewords: 40 }}</div>
+      </a>
+    </article>
+  {% endfor %}
+</div>

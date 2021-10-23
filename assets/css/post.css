@@ -1,0 +1,48 @@
+body {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+.page-header {
+  width: 100%;
+  max-width: 50rem;
+  margin: 4rem auto 2rem auto;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.date {
+  margin-bottom: 1rem;
+  color: var(--text-6);
+}
+
+.categories {
+  margin-bottom: 1.5rem;
+  color: var(--text-6);
+}
+
+.cate {
+  margin-right: 0.5em;
+}
+.cate::before {
+  content: '#';
+}
+
+.content-wrap {
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto 2rem auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .page-header {
+    width: calc(100% - 2rem);
+    margin: 3rem 1rem 1rem 1rem;
+  }
+  .content-wrap {
+    width: calc(100% - 2rem);
+    max-width: unset;
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="/assets/css/post-list.css">
+  </head>
+  <body>
+    {% include header.html %}
+    <div class="main-banner-wrap">
+      <div class="main-banner">
+        <img class="banner" src="/assets/img/home_background.jpg" alt="background">
+        <div class="site-title">
+          "Hi, I'm {{ site.author }}."
+        </div>
+        <div class="some-words">
+          <div>休对故人思故国，且将新火试新茶，诗酒趁年华。</div>
+          <div>—— 苏轼《望江南·超然台作》</div>
+        </div>
+      </div>
+    </div>
+    {% include home-post-list.html %}
+    <div class="all-post">
+      <a href="/posts" title="更多">
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+      </a>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
