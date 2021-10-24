@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'FZYaSongS-L-GB';
+    src: url('FZXIYSJW--GB1-0.woff2') format('woff2'),
+        url('FZXIYSJW--GB1-0.woff') format('woff'),
+        url('FZXIYSJW.ttf') format('truetype'),
+        url('FZXIYSJW--GB1-0.svg#FZXIYSJW--GB1-0') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+    font-smooth: always;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+

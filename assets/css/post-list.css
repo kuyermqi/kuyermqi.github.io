@@ -46,6 +46,7 @@
 .excerpt {
   margin-top: 1rem;
   font-size: 1rem;
+  font-family: 'Roboto Slab', 'Noto Serif SC';
   color: var(--text-8);
   overflow : hidden;
   text-overflow: ellipsis;

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Noto Serif SC';
+    src: url('NotoSerifSC-Regular-Alphabetic.woff2') format('woff2'),
+        url('NotoSerifSC-Regular-Alphabetic.woff') format('woff'),
+        url('NotoSerifSC-Regular-Alphabetic.ttf') format('truetype'),
+        url('NotoSerifSC-Regular-Alphabetic.svg#NotoSerifSC-Regular-Alphabetic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+    font-smooth: always;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+

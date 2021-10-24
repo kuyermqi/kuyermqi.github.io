@@ -34,6 +34,13 @@ body {
   margin: 0 auto 2rem auto;
 }
 
+.content * {
+  font-family: 'Roboto Slab', 'Noto Serif SC';
+}
+.content code * {
+  font-family: Consolas, monospace;
+}
+
 @media screen and (max-width: 1000px) {
   .page-header {
     width: calc(100% - 2rem);

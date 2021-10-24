@@ -6,6 +6,10 @@
   padding: 0 5em;
 }
 
+.nav * {
+  font-family: 'Trajan Pro';
+}
+
 .nav > div {
   flex: 1;
 }

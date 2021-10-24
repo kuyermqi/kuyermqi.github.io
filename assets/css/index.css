@@ -1,5 +1,11 @@
+@import url('/assets/fonts/FZXIYSJW.css');
+@import url('/assets/fonts/TrajanPro-Regular.css');
+@import url('/assets/fonts/RobotoSlab-Regular.css');
+@import url('/assets/fonts/NotoSerifSC-Regular-Alphabetic.css');
+
 * {
   font-size: 1rem;
+  font-family: 'Trajan Pro', 'FZYaSongS-L-GB';
 }
 
 html, body {

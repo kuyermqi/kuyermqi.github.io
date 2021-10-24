@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('RobotoSlab-Regular.woff2') format('woff2'),
+        url('RobotoSlab-Regular.woff') format('woff'),
+        url('RobotoSlab-Regular.ttf') format('truetype'),
+        url('RobotoSlab-Regular.svg#RobotoSlab-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+    font-smooth: always;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
