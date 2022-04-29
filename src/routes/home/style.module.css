@@ -1,0 +1,17 @@
+.main {
+  margin: 0 auto;
+  width: fit-content;
+  max-width: 60vw;
+}
+
+.list > li {
+  cursor: pointer;
+}
+
+.list > li:hover {
+  text-decoration: underline;
+}
+
+.list > li > span:first-child {
+  margin-right: 0.5em;
+}
