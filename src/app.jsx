@@ -1,15 +1,15 @@
 import { Routes, Route } from 'react-router-dom'
-import Home from './routes/home'
-import Post from './routes/post'
+import Home from 'routes/home'
+import Post from 'routes/post'
+import NotFound from './routes/404'
 
 const App = () => {
   return (
-    <div>
-      <Routes>
-        <Route path="/" element={Home} />
-        <Route path="/post/:postname" element={Post} />
-      </Routes>
-    </div>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/post/:postname' element={<Post />} />
+      <Route path='/not-found' element={<NotFound />} />
+    </Routes>
   )
 }
 

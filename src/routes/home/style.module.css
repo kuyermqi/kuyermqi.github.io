@@ -1,17 +1,43 @@
 .main {
+  padding: 0 45px;
   margin: 0 auto;
-  width: fit-content;
-  max-width: 60vw;
+  min-width: 200px;
+  max-width: 980px;
 }
 
-.list > li {
+.main > header {
+  padding: 1em 0;
+}
+
+.main > header > h1 {
+  font-weight: 500;
+}
+
+.main > header > p > a:hover {
+  opacity: 0.6;
+}
+
+.list {
+  padding-inline-start: 1.5em;
+}
+
+.item {
   cursor: pointer;
+  width: fit-content;
+  line-height: 200%;
 }
 
-.list > li:hover {
+.item:hover {
   text-decoration: underline;
 }
 
-.list > li > span:first-child {
+.item span:first-child {
   margin-right: 0.5em;
 }
+
+@media (max-width: 767px) {
+  .main {
+    padding: 15px;
+  }
+}
+
