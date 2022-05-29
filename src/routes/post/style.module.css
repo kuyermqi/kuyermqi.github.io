@@ -4,6 +4,12 @@
   max-width: 980px;
   margin: 0 auto !important;
   padding: 45px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.main[data-loading=false] {
+  opacity: 1;
 }
 
 @media (max-width: 767px) {

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import menu from 'data/menu.json'
+import list from 'data/list.json'
 import style from './style.module.css'
 
 const Home = () => {
@@ -16,12 +16,11 @@ const Home = () => {
           文章列表 👇
         </div>
         <ul className={style.list}>
-          {menu.map(item => {
+          {list.map(item => {
             return (
               <li className={style.item} key={item.postname}>
                 <Link to={`/post/${item.postname}`}>
-                  <span>{item.date}</span>
-                  <span>{item.name}</span>
+                  {`${item.date}\u00A0\u00A0${item.name}`}
                 </Link>
               </li>
             )

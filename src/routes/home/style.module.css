@@ -3,6 +3,7 @@
   margin: 0 auto;
   min-width: 200px;
   max-width: 980px;
+  box-sizing: border-box;
 }
 
 .main > header {
@@ -29,10 +30,6 @@
 
 .item:hover {
   text-decoration: underline;
-}
-
-.item span:first-child {
-  margin-right: 0.5em;
 }
 
 @media (max-width: 767px) {

@@ -1,6 +1,8 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
 import markdown, { Mode } from 'vite-plugin-markdown'
+import markdownIt from 'markdown-it'
+import markdownItPrism from 'markdown-it-prism'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
@@ -18,6 +20,9 @@ export default defineConfig({
   },
   plugins: [
     react(),
-    markdown({ mode: Mode.HTML }),
+    markdown({
+      mode: Mode.HTML,
+      markdownIt: markdownIt({ html: true }).use(markdownItPrism),
+    }),
   ]
 })
