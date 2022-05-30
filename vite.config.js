@@ -22,7 +22,7 @@ export default defineConfig({
     react(),
     markdown({
       mode: Mode.HTML,
-      markdownIt: markdownIt({ html: true }).use(markdownItPrism),
+      markdownIt: markdownIt().use(markdownItPrism),
     }),
   ]
 })
