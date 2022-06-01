@@ -15,3 +15,15 @@ a {
   color: black;
   text-decoration: none;
 }
+
+.markdown-body img {
+  max-width: 80%;
+}
+
+p {
+  line-height: 1.8;
+}
+
+blockquote p {
+  line-height: 1.5;
+}
