@@ -12,7 +12,7 @@ pre > code {
 }
 
 a {
-  color: black;
+  color: var(--text-8);
   text-decoration: none;
 }
 
@@ -26,4 +26,17 @@ p {
 
 blockquote p {
   line-height: 1.5;
+}
+
+:root {
+  --text-0: rgba(0, 0, 0, 1);
+  --text-1: rgba(0, 0, 0, .1);
+  --text-2: rgba(0, 0, 0, .2);
+  --text-3: rgba(0, 0, 0, .3);
+  --text-4: rgba(0, 0, 0, .4);
+  --text-5: rgba(0, 0, 0, .5);
+  --text-6: rgba(0, 0, 0, .6);
+  --text-7: rgba(0, 0, 0, .7);
+  --text-8: rgba(0, 0, 0, .8);
+  --text-9: rgba(0, 0, 0, .9);
 }

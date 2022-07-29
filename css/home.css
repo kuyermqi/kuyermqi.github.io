@@ -7,14 +7,15 @@
 }
 
 .main > header {
+  color: var(--text-8);
   padding: 1em 0;
 }
 
-.main > header > h1 {
+.main > header h1 {
   font-weight: 500;
 }
 
-.main > header > p > a:hover {
+.main > header a:hover {
   opacity: 0.6;
 }
 
@@ -28,8 +29,26 @@
   line-height: 200%;
 }
 
-.article:hover {
-  text-decoration: underline;
+.article a {
+  color: var(--text-0);
+}
+
+.article:hover a {
+  border-bottom: 2px solid var(--text-6);
+}
+
+.article-date {
+  color: var(--text-6);
+  padding-right: 0.25em;
+}
+
+.show-more {
+  color: var(--text-6);
+  margin: 1em 0 0 1.5em;
+}
+
+.show-more:hover {
+  border-bottom: 2px solid var(--text-6);
 }
 
 @media (max-width: 767px) {
@@ -38,3 +57,14 @@
   }
 }
 
+@media (min-width: 787px) {
+  .main {
+    max-width: 80vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    max-width: 50vw;
+  }
+}

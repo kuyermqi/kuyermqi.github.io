@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   {% include head.html %}
   <link rel="stylesheet" href="/css/home.css">
 </head>
+
 <body>
   <div class="main">
+
     <header>
       <h1>657's life</h1>
       <p>May the force be with you, always.</p>
       <p>📧 <a href='mailto:kuyermqi@outlook.com'>kuyermqi@outlook.com</a></p>
       <p>👨‍💻 <a href='https://github.com/kuyermqi'>https://github.com/kuyermqi</a></p>
     </header>
+
     <div>
       <div class="tag">
         文章列表 👇
       </div>
+
       <ul class="list">
-        {% for post in site.posts %}
+
+        {% for post in site.posts limit: 10 %}
           <li class="article">
             <a href="{{ post.url }}">
-              {{ post.date | date: "%Y-%m-%d" }}
-              {{ post.title }}
+              <span class="article-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+              <span class="article-title">{{ post.title }}</span>
             </a>
           </li>
         {% endfor %}
+
       </ul>
+
+      {% assign num_of_posts = site.posts.size %}
+      {% if num_of_posts > 0 %}
+        <a class="show-more" href="/posts">查看更多</a>
+      {% endif %}
+
     </div>
   </div>
 </body>

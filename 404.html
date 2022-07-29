@@ -1,25 +1,35 @@
 ---
 permalink: /404.html
-layout: default
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+
+<style>
+  div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
+  a {
+    color: black;
+    margin: 0 0.1em;
+    border-bottom: 1px dashed black;
   }
 </style>
 
-<div class="container">
-  <h1>404</h1>
+<body>
+  <div>
+    <p>你发现了一片<i>赛博新大陆</i></p>
+    <p>你决定将这个地方命名为 <b>404</b></p>
+    <p>这里过于空旷</p>
+    <p><i>"要不要<a href="/">回去</a>呢?"</i></p>
+  </div>
+</body>
+</html>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
